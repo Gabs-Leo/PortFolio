@@ -1,0 +1,35 @@
+*{
+	color: white;
+}
+header{
+	background-color: rgb(40, 40, 40);
+}
+body{
+	background-color: rgb(20, 20, 20);
+}
+ul{
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+li{
+	float: right;
+}
+li a{
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	padding: 35px 30px;
+}
+.title{
+	float: left;
+}
+.columnSide{
+	width: 20%;
+	float: left;
+}
+.columnMiddle{
+	width: 60%;
+	float:left;
+}

@@ -3,11 +3,15 @@
 	font-size: 20px;
 }
 button{
+	border-radius: 10px;
 	padding: 20px;
 	width: 250px;
 	background-color: purple;
 	border: none;
 	transition: 1s;
+}
+button:hover{
+	background-color: black;
 }
 header{
 	font-family: 'New Tegomin' , serif;
@@ -61,7 +65,7 @@ img{
 .columnSide{
 	width: 15%;
 	float: left;
-	background-color: white;
+	background-color:;
 }
 .columnMiddle{
 	width: 70%;
@@ -81,4 +85,9 @@ img{
 	float: right;
 	width: 100%;
 	padding: 0px 0px 0px 0px;
+}
+.footer{
+	clear:both;
+	background-color: purple;
+	width: 100%;
 }

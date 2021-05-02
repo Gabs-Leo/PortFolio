@@ -3,10 +3,11 @@
 	font-size: 20px;
 }
 button{
-	border-radius: 10px;
-	padding: 20px;
+	border-radius: 20px;
+	padding: 20px 20px;
+	margin: 50px 20px 0px 0px;
 	width: 250px;
-	background-color: purple;
+	background-color: rgb(255 50 50);
 	border: none;
 	transition: 1s;
 }
@@ -36,31 +37,10 @@ li a{
 	text-align: center;
 	display: block;
 	text-decoration: none;
-	padding: 35px 30px;
-}
-img{
-	float: right;
-	width: 250%;
-}
-.banner{
-	position:relative;
-}
-.banner::after{
-	position: absolute;
-	content: '';
-	display: block;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: linear-gradient(to right, rgba(20,20,20,1), rgba(255,0,0,1));
-
+	padding: 20px 30px;
 }
 .title{
 	float: left;
-}
-.panel1{
-	width:100;
 }
 .columnSide{
 	width: 15%;
@@ -71,23 +51,11 @@ img{
 	width: 70%;
 	float:left;
 }
-.presentationL{
-	float: left;
-	width: 50%;
-	padding: 100px 0px 0px 0px;
-}
-.presentationR{
-	float: right;
-	width: 50%;
-	padding: 0px 0px 0px 0px;
-}
-.presentationimg{
-	float: right;
-	width: 100%;
-	padding: 0px 0px 0px 0px;
-}
 .footer{
+	font-family: 'New Tegomin' , serif;
+	padding: 60px 0px 60px 0px;
+	text-align: center;
 	clear:both;
-	background-color: purple;
+	background-color: rgb(255 50 50);
 	width: 100%;
 }

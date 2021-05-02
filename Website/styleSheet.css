@@ -1,26 +1,27 @@
 *{
+	padding: 0;
+	margin: 0;
 	color: white;
 	font-size: 20px;
 }
 button{
-	border-radius: 20px;
+	border-radius: 15px;
 	padding: 20px 20px;
-	margin: 50px 20px 0px 0px;
+	margin: 50px 20px 50px 0px;
 	width: 250px;
 	background-color: rgb(255 50 50);
 	border: none;
-	transition: 1s;
+	transition: 0.5s;
 }
 button:hover{
-	background-color: black;
+	background-color: rgb(100, 35, 35);
 }
 header{
 	font-family: 'New Tegomin' , serif;
-	background-color: rgb(40, 40, 40);
+	background-color: rgb(40 40 40);
 }
 body{
 	font-family: 'Roboto', sans-serif;
-	background-color: rgb(20, 20, 20);
 	padding: 0;
 	margin: 0;
 }
@@ -49,7 +50,11 @@ li a{
 }
 .columnMiddle{
 	width: 70%;
-	float:left;
+	float: ;
+}
+.genericCenter{
+	display: flex;
+	justify-content: center;
 }
 .footer{
 	font-family: 'New Tegomin' , serif;

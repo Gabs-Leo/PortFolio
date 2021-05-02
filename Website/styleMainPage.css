@@ -2,13 +2,34 @@ p{
 	padding: 0;
 	margin: 0;
 }
+h1{
+	padding-top: 30px;
+	margin-bottom: 60px;
+	text-align: center;
+	font-size: 30px;
+}
 .presentationimg{
 	width: 50%;
 }
 .firstSec{
+	background-color: rgb(20 20 20);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+.secondSec{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(40 40 40);
+}
+.imgGallery{
+	display: flex;
+	justify-content: space-between;
+}
+.imgGallery img{
+	width: 350%;
 }
 .homeText{
 	display: flex;

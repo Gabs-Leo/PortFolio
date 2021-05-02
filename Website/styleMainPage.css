@@ -1,11 +1,11 @@
 .bodyTitle{
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 30px;
+	margin-bottom: 80px;
 	text-align: center;
 	font-size: 30px;
 }
 .presentationimg{
-	width: 1180px;
+	width: 62%;
 }
 .firstSec{
 	background-color: rgb(20 20 20);
@@ -26,11 +26,11 @@
 	padding-bottom: 100px;
 }
 .divContent{
+	margin: 5px;
 	padding: 20px;
-	margin-bottom: 60px;
 	border-radius: 20px;
 	background-color: rgb(40 40 40);
-	width: 28%;
+	width: 30%;
 	
 }
 .divContent a{
@@ -63,10 +63,12 @@
 .imgGallery{
 	display: flex;
 	justify-content: space-between;
+	
 }
 .imgGallery img{
-	width: 400px;
+	width: 30%;
 	border-radius: 40px;
+	margin-bottom: 40px;
 }
 .homeText{
 	display: flex;
@@ -74,4 +76,11 @@
 }
 .myName{
 	font-size: 50px;
+}
+@media (max-width: 960px){
+	
+	.imgGallery, .divContent{flex-direction: column}
+	.imgGallery, .imgGallery img, .divContent{width: 100%}
+	.presentationimg{width: 0%}
+	.firstSec{justify-content: center;}
 }

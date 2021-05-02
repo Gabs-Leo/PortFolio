@@ -24,12 +24,17 @@ h1{
 	justify-content: space-between;
 	background-color: rgb(40 40 40);
 }
+.thirdSec{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(20 20 20);
+}
 .imgGallery{
 	display: flex;
 	justify-content: space-between;
 }
 .imgGallery img{
-	width: 350%;
+	width: 30%;
 }
 .homeText{
 	display: flex;

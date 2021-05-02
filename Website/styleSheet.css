@@ -50,7 +50,7 @@ li a{
 }
 .columnMiddle{
 	width: 70%;
-	float: ;
+	float: left;
 }
 .genericCenter{
 	display: flex;

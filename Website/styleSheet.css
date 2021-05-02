@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 }
 a{
 	text-decoration: none;
@@ -22,7 +22,6 @@ a{
 	margin: 50px 20px 50px 0px;
 	width: 250px;
 	background-color: var(--colorTheme);
-	border: none;
 	transition: 0.5s;
 }
 .button:hover{
@@ -70,6 +69,10 @@ li a:hover{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.genericSpaceAround{
+	display: flex;
+	justify-content: space-between;
 }
 .footer{
 	font-family: 'New Tegomin' , serif;

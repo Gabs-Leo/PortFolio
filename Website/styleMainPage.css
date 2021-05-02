@@ -1,4 +1,4 @@
-h1{
+.bodyTitle{
 	padding-top: 30px;
 	margin-bottom: 60px;
 	text-align: center;
@@ -22,6 +22,41 @@ h1{
 	display: flex;
 	justify-content: space-between;
 	background-color: rgb(20 20 20);
+}
+.divContent{
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	background-color: rgb(40 40 40);
+	width: 28%;
+	
+}
+.divContent a{
+	border-radius: 15px;
+	padding: 10px 20px;
+	margin: 20px 20px 20px 0px;
+	width: 30%;
+	background-color: var(--colorTheme);
+	transition: 0.5s;
+}
+.divContent a i{
+	padding-right: 10px;
+	transition: 0.5s;
+}
+.divContent h1{
+	margin-bottom: 20px;
+	font-size: 25px;
+	text-align: left;
+}
+.divContent a:hover{
+	background-color: var(--colorThemeHover);
+}
+.divTag{
+	font-size: 16px;
+	text-align: center;
+	padding: 10px 20px;
+	background-color: rgba(20 20 20);
+	border-radius: 15px;
 }
 .imgGallery{
 	display: flex;

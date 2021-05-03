@@ -8,7 +8,7 @@
 	width: 62%;
 }
 .firstSec{
-	background-color: rgb(20 20 20);
+	background-color: rgba(20, 20, 20, 1);
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -63,6 +63,7 @@
 .imgGallery{
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 50px;
 	
 }
 .imgGallery img{
@@ -77,10 +78,18 @@
 .myName{
 	font-size: 50px;
 }
+.presentation{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 @media (max-width: 960px){
-	
 	.imgGallery, .divContent{flex-direction: column}
-	.imgGallery, .imgGallery img, .divContent{width: 100%}
+	.imgGallery, .imgGallery img{width: 100%; align-content: center;}
+	.divContent{width: 95%;}
 	.presentationimg{width: 0%}
 	.firstSec{justify-content: center;}
+	.presentation{ margin-top: 250px; margin-bottom: 150px;}
+	.firstSec{background-image: url("src/LilliaIMG.png"); background-size: cover;}
 }

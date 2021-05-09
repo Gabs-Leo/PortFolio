@@ -57,6 +57,9 @@ h1{
 	padding-right: var(--minusSpace);
 	transition: 0.5s;
 }
+.smallButton:hover{
+	background-color: var(--colorThemeHover);
+}
 /*-------------------------------------------------------------------*/
 /*Navbar*/
 header{
@@ -126,6 +129,7 @@ nav{
 .thirdSec{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	background-color: var(--bgDarkTheme);
 	padding-bottom: var(--bigSpace);
 }
@@ -136,14 +140,14 @@ nav{
 	background-color: var(--bgTheme);
 	width: 30%;
 }
-.divContent h1{
+.divContent h1, .divContent4th h1{
 	padding-top: var(--defaultSpace);
 	margin-bottom: var(--defaultSpace);
 	margin-top: 0;
 	font-size: 25px;
 	text-align: left;
 }
-.divContent p{
+.divContent p, .divContent4th p{
 	margin-bottom: var(--bigSpace);
 }
 .divTag{
@@ -159,6 +163,37 @@ nav{
 	justify-content: space-between;
 }
 
+/*-------------------------------------------------------------------*/
+/*4th Section*/
+.forthSec{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--bgTheme);
+	padding-bottom: var(--bigSpace);
+}
+.divContent4th{
+	text-align: center;
+	margin: var(--minusSpace);
+	padding: var(--defaultSpace);
+	border-radius: var(--borderRadius);
+	background-color: var(--bgDarkTheme);
+	width: 30%;
+}
+.divContent4th h1{
+	text-align: center;
+}
+.icons{
+	display: flex;
+	justify-content: center;
+}
+.icons i{
+	margin: var(--minusSpace);
+	font-size: 60px;
+	color: var(--colorTheme);
+}
+/*-------------------------------------------------------------------*/
+/*Footer*/
 .footer{
 	font-family: 'New Tegomin' , serif;
 	font-weight: bold;

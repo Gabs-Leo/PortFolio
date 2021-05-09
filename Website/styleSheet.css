@@ -8,9 +8,40 @@ a{
 	text-decoration: none;
 }
 :root{
-	--colorTheme: #a32094;
+	--defaultSpace: 20px;
+	--colorTheme: #ff56eb;
 	--colorThemeHover: #6b1c62;
 	--colorRed: #ff3232;
+}
+/*Navbar*/
+header{
+	display: flex;
+	justify-content: center;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+.navbar{
+	padding: var(--defaultSpace);
+}
+.navbar a{
+	margin: var(--defaultSpace);
+	transition: .5s;
+}
+.navbar a:hover{
+	color: var(--colorTheme);
+}
+/*-------------------------------------------------------------------*/
+/*1st Section*/
+.columnMid{
+	width: 70%;
+}
+.firstSec{
+	background-color: rgba(20, 20, 20, 1);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 .button i{
 	font-size: 30px;
@@ -34,48 +65,9 @@ header{
 body{
 	font-family: 'Roboto', sans-serif;
 }
-ul{
-	list-style-type: none;
-	overflow: hidden;
-}
-li{
-	float: right;
-}
-li a{
-	text-align: center;
-	display: block;
-	text-decoration: none;
-	padding: 35px 30px;
-	font-size: 22px;
-	transition: 0.5s;
-}
-li a:hover{
-	color: var(--colorTheme);
-}
-.navbar{
-	
-}
 .title{
 	font-weight: bold;
 	float: left;
-}
-.columnSide{
-	width: 15%;
-	float: left;
-	background-color:;
-}
-.columnMiddle{
-	width: 70%;
-	float: left;
-}
-.genericCenter{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.genericSpaceAround{
-	display: flex;
-	justify-content: space-between;
 }
 .footer{
 	font-family: 'New Tegomin' , serif;
@@ -86,7 +78,6 @@ li a:hover{
 	background-color: var(--colorTheme);
 	width: 100%;
 }
-
 .footer i{
 	margin: 20px 30px 0px 30px;
 	font-size: 35px;
@@ -95,7 +86,6 @@ li a:hover{
 .footer i:hover{
 	color: var(--colorThemeHover);
 }
-
 @media (max-width: 960px){
 	.columnSide {width: 0%}
 	.columnMiddle {width: 80%}

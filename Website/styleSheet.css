@@ -1,3 +1,4 @@
+/*Utility*/
 *{
 	padding: 0;
 	margin: 0;
@@ -8,11 +9,34 @@ a{
 	text-decoration: none;
 }
 :root{
+	--biggerText: 20px;
 	--defaultSpace: 20px;
-	--colorTheme: #ff56eb;
-	--colorThemeHover: #6b1c62;
-	--colorRed: #ff3232;
+	--minusSpace: 10px;
+	--borderRadius: 10px;
+	--colorTheme: #b642ac;
+	--colorThemeHover: #6b005f;
+	--bgTheme: rgb(40, 40, 40);
+	--bgDarkTheme: rgb(20, 20, 20);
 }
+.columnMid{
+	width: 70%;
+}
+.button{
+	text-align: center;
+	border-radius: var(--borderRadius);
+	padding: var(--defaultSpace);
+	margin-top: var(--defaultSpace);
+	width: 200px;
+	background-color: var(--colorTheme);
+	transition: 0.5s;
+}
+.button i{
+	margin-right: var(--minusSpace);
+}
+.button:hover{
+	background-color: var(--colorThemeHover);
+}
+/*-------------------------------------------------------------------*/
 /*Navbar*/
 header{
 	display: flex;
@@ -28,35 +52,27 @@ nav{
 .navbar a{
 	margin: var(--defaultSpace);
 	transition: .5s;
+	font-size: var(--biggerText);
 }
 .navbar a:hover{
 	color: var(--colorTheme);
 }
 /*-------------------------------------------------------------------*/
 /*1st Section*/
-.columnMid{
-	width: 70%;
-}
 .firstSec{
-	background-color: rgba(20, 20, 20, 1);
+	background-color: var(--bgDarkTheme);
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
-.button i{
-	font-size: 30px;
-	padding-right: 20px;
+.presentation{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-.button{
-	border-radius: 15px;
-	padding: 20px 20px;
-	margin: 20px 20px 60px 0px;
-	width: 250px;
-	background-color: var(--colorTheme);
-	transition: 0.5s;
-}
-.button:hover{
-	background-color: var(--colorThemeHover);
+.presentationimg{
+	width: 62%;
 }
 header{
 	font-family: 'New Tegomin' , serif;
@@ -87,6 +103,5 @@ body{
 	color: var(--colorThemeHover);
 }
 @media (max-width: 960px){
-	.columnSide {width: 0%}
-	.columnMiddle {width: 80%}
+	.columnMid {width: 100%}
 }

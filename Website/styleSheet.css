@@ -5,11 +5,21 @@
 	color: white;
 	font-size: 18px;
 }
+body{
+	font-family: 'Roboto', sans-serif;
+}
 a{
 	text-decoration: none;
 }
+h1{
+	margin-top: var(--bigSpace);
+	margin-bottom: var(--bigSpace);
+	text-align: center;
+	font-size: 30px;
+}
 :root{
 	--biggerText: 20px;
+	--bigSpace: 30px;
 	--defaultSpace: 20px;
 	--minusSpace: 10px;
 	--borderRadius: 10px;
@@ -41,6 +51,8 @@ a{
 header{
 	display: flex;
 	justify-content: center;
+	font-family: 'New Tegomin' , serif;
+	background-color: var(--bgTheme);
 }
 nav{
 	display: flex;
@@ -66,7 +78,7 @@ nav{
 	align-items: center;
 }
 .presentation{
-	margin-top: 40px;
+	margin-top: var(--defaultSpace);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -74,17 +86,32 @@ nav{
 .presentationimg{
 	width: 62%;
 }
-header{
-	font-family: 'New Tegomin' , serif;
+.myName{
+	font-size: 50px;
+}
+/*-------------------------------------------------------------------*/
+/*2nd Section*/
+.secondSec{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	background-color: rgb(40 40 40);
+	padding-bottom: var(--bigSpace);
 }
-body{
-	font-family: 'Roboto', sans-serif;
+.imgGallery{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: var(--bigSpace);
+	margin-top: var(--bigSpace);
 }
-.title{
-	font-weight: bold;
-	float: left;
+.imgGallery img{
+	width: 30%;
+	border-radius: var(--borderRadius);
+	margin-bottom: var(--bigSpace);
 }
+/*-------------------------------------------------------------------*/
+/*2nd Section*/
 .footer{
 	font-family: 'New Tegomin' , serif;
 	font-weight: bold;

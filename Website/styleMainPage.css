@@ -1,16 +1,3 @@
-.bodyTitle{
-	margin-top: 30px;
-	margin-bottom: 80px;
-	text-align: center;
-	font-size: 30px;
-}
-
-.secondSec{
-	display: flex;
-	justify-content: space-between;
-	background-color: rgb(40 40 40);
-	padding-bottom: 30px;
-}
 .thirdSec{
 	display: flex;
 	justify-content: space-between;
@@ -52,23 +39,9 @@
 	background-color: rgba(20 20 20);
 	border-radius: 15px;
 }
-.imgGallery{
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 50px;
-	
-}
-.imgGallery img{
-	width: 30%;
-	border-radius: 40px;
-	margin-bottom: 40px;
-}
 .homeText{
 	display: flex;
 	justify-content: flex-start;
-}
-.myName{
-	font-size: 50px;
 }
 @media (max-width: 960px){
 	.imgGallery, .divContent{flex-direction: column}

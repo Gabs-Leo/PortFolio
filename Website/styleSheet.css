@@ -60,6 +60,10 @@ h1{
 .smallButton:hover{
 	background-color: var(--colorThemeHover);
 }
+.fixMargin{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
 /*-------------------------------------------------------------------*/
 /*Navbar*/
 header{
@@ -116,8 +120,6 @@ nav{
 .imgGallery{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: var(--bigSpace);
-	margin-top: var(--bigSpace);
 }
 .imgGallery img{
 	width: 30%;
@@ -130,6 +132,7 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	background-color: var(--bgDarkTheme);
 	padding-bottom: var(--bigSpace);
 }

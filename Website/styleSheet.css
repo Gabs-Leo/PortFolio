@@ -1,95 +1,80 @@
 /*Utility*/
 *{
-	padding: 0;
-	margin: 0;
-	color: white;
-	font-size: 18px;
-}
-body{
-	font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: var(--colorText);
 }
 a{
-	text-decoration: none;
-}
-h1{
-	margin-top: var(--bigSpace);
-	margin-bottom: var(--bigSpace);
-	text-align: center;
-	font-size: 30px;
+    text-decoration: none;
 }
 :root{
-	--biggerText: 20px;
-	--bigSpace: 40px;
-	--defaultSpace: 20px;
-	--minusSpace: 10px;
-	--borderRadius: 10px;
-	--colorTheme: #b642ac;
-	--colorThemeHover: #6b005f;
-	--bgTheme: rgb(40, 40, 40);
-	--bgDarkTheme: rgb(20, 20, 20);
+    --color: #5235E7;
+    --colorDark: #5429CF;
+    --mainTheme: rgb(40,40,40);
+    --darkerTheme: rgb(20,20,20);
+	--colorText: white;
+    /*--colorText: #B0AFAF;*/
+
+    --title: 24px;
+    --subTitle: 20px;
+
+    --minusSpace: 10px;
+    --defaultSpace: 20px;
+    --bigSpace: 40px;
+    --border: 10px;
 }
-.columnMid{
-	width: 70%;
+.midColumn{
+    width:80%;
 }
-.centerButton{
-	display: flex;
-	justify-content: center;
+body{
+    background-color: var(--darkerTheme);
 }
-.button{
-	text-align: center;
-	border-radius: var(--borderRadius);
-	padding: var(--defaultSpace);
-	margin-top: var(--defaultSpace);
-	width: 200px;
-	background-color: var(--colorTheme);
-	transition: 0.5s;
+h1, h2, h3, h4{
+    color: white;
 }
-.button i{
-	margin-right: var(--minusSpace);
+img{
+    border-radius: var(--border);
 }
-.button:hover{
-	background-color: var(--colorThemeHover);
-}
-.smallButton{
-	border-radius: var(--borderRadius);
-	padding: var(--minusSpace) var(--defaultSpace);
-	width: 30%;
-	background-color: var(--colorTheme);
-	transition: 0.5s;
-}
-.smallButton i{
-	padding-right: var(--minusSpace);
-	transition: 0.5s;
-}
-.smallButton:hover{
-	background-color: var(--colorThemeHover);
-}
-.fixMargin{
-	margin-top: 100px;
-	margin-bottom: 100px;
+strong{
+    color: var(--color)
 }
 /*-------------------------------------------------------------------*/
 /*Navbar*/
-header{
-	display: flex;
-	justify-content: center;
-	font-family: 'New Tegomin' , serif;
-	background-color: var(--bgTheme);
+.navbar{
+    width:100%;
+    background-color: var(--mainTheme);
+}
+.navbar .midColumn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding: 10px
+}
+.logo{
+    width: 100%;
+    margin: var(--minusSpace);
+}
+.closebtn, .bars{
+    display: none;
 }
 nav{
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: center;
+	position: fixed;
 }
-.navbar{
-	padding: var(--defaultSpace);
+.overlay-content, .bars{
+    padding: var(--defaultSpace);
 }
-.navbar a{
-	margin: var(--defaultSpace);
-	transition: .5s;
-	font-size: var(--biggerText);
+.overlay-content a, .bars, .port{
+    color: white;
+    padding: var(--minusSpace);
+    margin: var(--minusSpace);
+	margin-right: 0;
+    transition: 0.2s;
 }
-.navbar a:hover{
-	color: var(--colorTheme);
+.overlay-content a:hover{
+    border-bottom: solid var(--color) 5px;
 }
 /*-------------------------------------------------------------------*/
 /*1st Section*/
@@ -223,6 +208,47 @@ nav{
 .footer i:hover{
 	color: var(--colorThemeHover);
 }
-@media (max-width: 960px){
-	.columnMid {width: 100%}
+@media screen and (max-width: 1000px){
+	.midColumn{
+        width:100%;
+    }
+	.overlay-content a:hover, .overlay a:focus, .closebtn{
+		border-bottom: solid var(--color) 0px;
+		color: var(--color)
+	}
+    .bars{
+        display: block;
+    }
+    .overlay{
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        z-index: 99;
+        left: 0;
+        top: 0;
+        background-color: black;
+        background-color: rgba(0, 0, 0, .9);
+        overflow-x: hidden;
+        transition: .5s;
+    }
+    .overlay-content{
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: var(--defaultSpace);
+    }
+    .overlay a{
+        padding: 8px;
+        font-size: 36px;
+        color: white;
+        display: block;
+        transition: .3s;
+    }
+    .overlay .closebtn{
+        position:absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
 }

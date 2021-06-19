@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+		<script src="index.js"></script>
 		<link rel="stylesheet" href="styleSheet.css">
 		<link rel="stylesheet" href="styleMainPage.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,24 +13,26 @@
 	</head>
 	<body>
 		<!--Navbar-->
-		<header>
-			<div class="columnMid">
-				<nav>
-					<div class="navbar">
-						<a href="index.html">Portfolio</a>
-					</div>
-					<div class="navbar">
-						<a href="#">Games</a>
-						<a href="#">Projects</a>
-						<a href="#">Knowledge</a>
-						<a href="#">About Me</a>
-					</div>
-				</nav>
-			</div>
-		</header>
+        <nav class="navbar">
+            <div class="midColumn">
+                <div class="port">
+                    <a href="#firstSec">Portfolio</a>
+                </div>
+                <div id="navBar" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#aboutMe" onclick="closeNav()">Sobre Mim</a>
+                        <a href="#projects" onclick="closeNav()">Projetos</a>
+                        <a href="#services" onclick="closeNav()">Serviços</a>
+                        <a href="#knowledge" onclick="closeNav()">Conhecimentos</a>
+                    </div>
+                </div>
+                <a href="#" onclick="openNav()" class="bars">XD</a>
+            </div>
+        </nav>
 
 		<!--1st Section-->
-		<div class="firstSec">
+		<div class="firstSec" id="firstSec">
 			<div class="presentation">
 				<p>Hello, I'm</p>
 				<p><b class="myName">Gabs</b></p>
@@ -42,7 +45,7 @@
 		</div>
 
 		<!--2nd Section-->
-		<div class="secondSec">
+		<div class="secondSec" id="aboutMe">
 			<div class="columnMid">
 				<div class="fixMargin">
 					<h1>Most Downloaded Games</h1>
@@ -59,7 +62,7 @@
 		</div>
 
 		<!--3rd Section-->
-		<div class="thirdSec">
+		<div class="thirdSec" id="projects">
 			<div class="columnMid">
 				<div class="fixMargin">
 					<h1>Recent Projects</h1>
@@ -104,7 +107,7 @@
 			</div>
 		</div>
 		<!--4th Section-->
-		<div class="forthSec">
+		<div class="forthSec" id="services">
 			<div class="columnMid">
 				<div class="fixMargin">
 					<h1>Knowledge</h1>
@@ -156,6 +159,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div id="knowledge">
+
 		</div>
 		<!--Footer-->
 		<footer class="footer">

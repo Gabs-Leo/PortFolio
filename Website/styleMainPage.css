@@ -1,8 +1,5 @@
-.homeText{
-	display: flex;
-	justify-content: flex-start;
-}
-@media (max-width: 960px){
+
+@media screen and (max-width: 1000px){
 	.imgGallery, .divContent{flex-direction: column}
 	.imgGallery, .imgGallery img{width: 100%; align-content: center;}
 	.divContent{width: 90%;}

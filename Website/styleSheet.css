@@ -9,13 +9,15 @@ a{
     text-decoration: none;
 }
 :root{
-    --color: #5235E7;
-    --colorDark: #5429CF;
+    --color: #e77c35;
+    --colorDark: #b36233;
     --mainTheme: rgb(40,40,40);
     --darkerTheme: rgb(20,20,20);
 	--colorText: white;
     /*--colorText: #B0AFAF;*/
 
+	--buttonFont: 20px;
+	--buttonColor: white;
     --title: 24px;
     --subTitle: 20px;
 
@@ -25,7 +27,7 @@ a{
     --border: 10px;
 }
 .midColumn{
-    width:80%;
+    width:65%;
 }
 body{
     background-color: var(--darkerTheme);
@@ -33,11 +35,32 @@ body{
 h1, h2, h3, h4{
     color: white;
 }
-img{
-    border-radius: var(--border);
+h2{
+	font-size: 40px;
 }
 strong{
     color: var(--color)
+}
+.button{
+	margin-top: var(--bigSpace);
+}
+.button a{
+	padding: var(--defaultSpace);
+	padding-left: var(--bigSpace);
+	padding-right: var(--bigSpace);
+	font-size: var(--buttonFont);
+	background-color: var(--color);
+	color: var(--buttonColor);
+	border-radius: var(--border);
+	transition: .5s;
+}
+.button a:hover{
+	background-color: var(--colorDark);
+}
+.button i{
+	margin-right: var(--minusSpace);
+	font-size: var(--buttonFont);
+	color: var(--buttonColor);
 }
 /*-------------------------------------------------------------------*/
 /*Navbar*/
@@ -62,6 +85,7 @@ nav{
     display: flex;
     justify-content: center;
 	position: fixed;
+	z-index: 99;
 }
 .overlay-content, .bars{
     padding: var(--defaultSpace);
@@ -78,23 +102,31 @@ nav{
 }
 /*-------------------------------------------------------------------*/
 /*1st Section*/
-.firstSec{
-	background-color: var(--bgDarkTheme);
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+.banner{
+	padding-top: 80px;
+	height: 800px;
+	/*background-image: url("src/lilliaImg.jpg");*/
+	background-color: #181818;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative
 }
-.presentation{
-	margin-top: var(--defaultSpace);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.bannerText{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-.presentationimg{
-	width: 62%;
+.bannerText h2{
+	font-size: 100px;
 }
-.myName{
-	font-size: 50px;
+.bannerText h1, .bannerText h3{
+	font-size: 30px;
+}
+.bannerText .button{
+	margin-top: var(--bigSpace);
 }
 /*-------------------------------------------------------------------*/
 /*2nd Section*/
@@ -103,16 +135,22 @@ nav{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: var(--bgTheme);
+	background-color: var(--mainTheme);
 }
-.imgGallery{
+.secondSec .midColumn{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 }
-.imgGallery img{
-	width: 30%;
-	border-radius: var(--borderRadius);
-	margin-bottom: var(--bigSpace);
+.secondSec .midColumn div{
+	width: 50%;
+}
+.imgAbout img{
+	width: 100%;
+}
+.textAbout p{
+	margin-top: var(--defaultSpace);
+	margin-bottom: var(--defaultSpace);
 }
 /*-------------------------------------------------------------------*/
 /*3rd Section*/

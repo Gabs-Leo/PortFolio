@@ -16,7 +16,7 @@ a{
 }
 :root{
     --color: #35afe7;
-    --colorDark: #2B2B5F;
+    --colorDark: #383892;
     --mainTheme: #282828;
     --darkerTheme: #141414;
 	--colorText: #D8D8D8;
@@ -249,23 +249,66 @@ nav{
 }
 
 /*-------------------------------------------------------------------*/
+/*5th Section*/
+.fifthSec{
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 100px;
+}
+.fifthSec .midColumn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fifthSec .textAbout{
+	width: 35%;
+}
+.fifthSec .textAbout i{
+	color: var(--color)
+}
+.fifthSec .galleryPjt{
+	justify-content: flex-end;
+	width: 60%
+}
+.fifthSec .galleryPjtElement{
+	background-color: var(--darkerTheme);
+	border: solid var(--mainTheme) 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	width: 22%;
+}
+.fifthSec .galleryPjtElement:hover{
+	border: solid var(--color) 5px;
+}
+.fifthSec .galleryPjtElement i{
+	color: var(--color);
+	font-size: 80px;
+}
+/*-------------------------------------------------------------------*/
 /*Footer*/
 .footer{
+	color: white;
 	font-family: 'New Tegomin' , serif;
 	font-weight: bold;
 	text-align: center;
 	padding: 40px 0px 45px 0px;
 	clear:both;
-	background-color: var(--colorTheme);
+	background-image: linear-gradient(to right, var(--color), var(--colorDark));
 	width: 100%;
 }
 .footer i{
+	color: white;
 	margin: 20px 30px 0px 30px;
 	font-size: 35px;
-	transition: 0.5s;
+	transition: 0.2s;
 }
 .footer i:hover{
-	color: var(--colorThemeHover);
+	color: var(--mainTheme);
 }
 @media screen and (max-width: 1000px){
 	.midColumn{

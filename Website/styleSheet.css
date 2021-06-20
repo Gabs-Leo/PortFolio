@@ -1,9 +1,15 @@
 /*Utility*/
 *{
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
     padding: 0;
     margin: 0;
     font-size: 20px;
     color: var(--colorText);
+}
+html{
+	scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -27,7 +33,7 @@ a{
     --border: 10px;
 }
 .midColumn{
-    width:65%;
+    width:70%;
 }
 body{
     background-color: var(--darkerTheme);
@@ -161,13 +167,14 @@ nav{
 }
 /*-------------------------------------------------------------------*/
 /*3rd Section*/
-.thirdSec{
+.thirdSec, .forthSec{
 	padding-top: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 100px;
 }
-.thirdSec h3{
+.thirdSec h3, .forthSec h3{
 	margin-bottom: var(--minusSpace);
 }
 .galleryPjt{
@@ -180,13 +187,13 @@ nav{
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.thirdSec h2{
+.thirdSec h2, .forthSec h2{
 	text-align: center;
 	margin-bottom: 50px;
 }
 .galleryPjtElement{
 	margin: var(--minusSpace);
-	width: 30%;
+	width: 400px;
 	background-color: var(--mainTheme);
 	border-radius: var(--border);
 	border-top-left-radius: 15px;
@@ -208,46 +215,39 @@ nav{
 	border-radius: var(--border);
 	font-size: 15px;
 	margin-bottom: var(--minusSpace);
+	color:white
 }
 .galleryContent{
 	padding: var(--defaultSpace)
+}
+.galleryContent p{
+	height: 60px;
 }
 
 /*-------------------------------------------------------------------*/
 /*4th Section*/
 .forthSec{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--bgTheme);
-	padding-bottom: var(--bigSpace);
-}
-.divContent4th{
+	background-color: var(--mainTheme);
 	text-align: center;
-	margin: var(--minusSpace);
-	padding: var(--bigSpace) var(--defaultSpace);
-	border-radius: var(--borderRadius);
-	background-color: var(--bgDarkTheme);
-	width: 30%;
 }
-.divContent4th h1{
+.forthSec h3{
 	font-size: 20px;
-	text-align: center;
+	margin-bottom: var(--defaultSpace);
+	margin-top: var(--defaultSpace);
 }
-.icons{
-	display: flex;
-	justify-content: center;
-}
-.icons  img{
-	width: 50px;
-	padding: 0;
-	margin: 0;
-}
-.icons i{
-	margin: 0 var(--minusSpace) var(--minusSpace) var(--minusSpace);
+.forthSec i{
+	margin-top: var(--defaultSpace);
 	font-size: 50px;
-	color: var(--colorTheme);
+	color: var(--color)
 }
+.forthSec .galleryPjtElement{
+	background-color: var(--darkerTheme);
+	border: solid var(--mainTheme) 5px;
+}
+.forthSec .galleryPjtElement:hover{
+	border: solid var(--color) 5px;
+}
+
 /*-------------------------------------------------------------------*/
 /*Footer*/
 .footer{

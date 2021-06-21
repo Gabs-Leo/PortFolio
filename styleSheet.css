@@ -322,6 +322,9 @@ nav{
 	color: var(--color);
 	font-size: 80px;
 }
+#cplusplus i{
+	font-size: 4vw;
+}
 /*-------------------------------------------------------------------*/
 /*Footer*/
 .footer{
@@ -393,7 +396,10 @@ nav{
 	.secondSec .midColumn div, .fifthSec .midColumn div, .forthSec .galleryPjtElement, .thirdSec .galleryPjtElement{
 		width: 90%;
 	}
-	.toTop{
-		right: 20px;
+	.small{
+		margin-top: 50px;
+	}
+	#cplusplus i{
+		font-size: 100px;
 	}
 }

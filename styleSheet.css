@@ -179,6 +179,8 @@ nav{
 	align-items: center;
 	flex-direction: column;
 	background-color: var(--mainTheme);
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .secondSec .midColumn{
 	display: flex;

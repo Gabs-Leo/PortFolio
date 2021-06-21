@@ -47,14 +47,10 @@ h1, h2, h3, h4{
 h2{
 	font-size: 40px;
 }
-strong{
-    color: var(--color)
-}
 .button{
 	margin-top: var(--bigSpace);
 	margin-bottom: var(--bigSpace);
 }
-
 .button a{
 	padding: var(--defaultSpace);
 	padding-left: var(--bigSpace);
@@ -91,9 +87,6 @@ strong{
 .toTop a{
 	padding-left: 25px;
 	padding-right: 25px;
-}
-.toTop i{
-	margin: 0;
 }
 .small{
 	margin-top: var(--bigSpace);

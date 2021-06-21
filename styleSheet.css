@@ -275,6 +275,7 @@ nav{
 .forthSec .galleryPjtElement{
 	background-color: var(--darkerTheme);
 	border: solid var(--mainTheme) 5px;
+	width: 21%;
 }
 .forthSec .galleryPjtElement:hover{
 	border: solid var(--color) 5px;
@@ -389,7 +390,7 @@ nav{
 		flex-direction: column;
 		padding-bottom: 50px;
 	}
-	.secondSec .midColumn div, .fifthSec .midColumn div{
+	.secondSec .midColumn div, .fifthSec .midColumn div, .forthSec .galleryPjtElement, .thirdSec .galleryPjtElement{
 		width: 90%;
 	}
 	.toTop{

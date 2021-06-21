@@ -51,7 +51,7 @@ function myFunction() {
     if(document.body.scrollTop > 5800 || document.documentElement.scrollTop > 5800){
         document.getElementById("topB").style.bottom = "200px";
     } else{
-        document.getElementById("topB").style.bottom = "80px";
+        document.getElementById("topB").style.bottom = "40px";
     }
   } else {
     document.getElementById("topB").style.opacity = "0";

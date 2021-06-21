@@ -404,5 +404,7 @@ nav{
 	}
 	.toTop{
 		right: 40px;
+		bottom: 40px;
+		display: none;
 	}
 }

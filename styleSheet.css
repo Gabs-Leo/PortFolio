@@ -1,0 +1,396 @@
+/*Utility*/
+*{
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: var(--colorText);
+	font-family: "Montserrat", serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --color: #8a36e9;
+    --colorDark: #732cad;
+    --mainTheme: #282828;
+    --darkerTheme: #141414;
+	--colorText: #D8D8D8;
+    /*    --color: #35afe7;
+    --colorDark: #383892;;*/
+
+	--buttonFont: 20px;
+	--buttonColor: white;
+    --title: 24px;
+    --subTitle: 20px;
+
+    --minusSpace: 10px;
+    --defaultSpace: 20px;
+    --bigSpace: 40px;
+    --border: 10px;
+}
+.midColumn{
+    width:70%;
+}
+body{
+    background-color: var(--darkerTheme);
+}
+h1, h2, h3, h4{
+	font-family: "Libre Baskerville", serif;
+    color: white;
+}
+h2{
+	font-size: 40px;
+}
+strong{
+    color: var(--color)
+}
+.button{
+	margin-top: var(--bigSpace);
+	margin-bottom: var(--bigSpace);
+}
+
+.button a{
+	padding: var(--defaultSpace);
+	padding-left: var(--bigSpace);
+	padding-right: var(--bigSpace);
+	font-size: var(--buttonFont);
+	background-color: var(--color);
+	color: var(--buttonColor);
+	border-radius: var(--border);
+	transition: .5s;
+}
+.button i{
+	margin-right: var(--minusSpace);
+	font-size: var(--buttonFont);
+	color: var(--buttonColor);
+}
+.toTop{
+	font-size: var(--buttonFont);
+	background-color: var(--color);
+	color: var(--buttonColor);
+	border-radius: var(--border);
+	transition: .5s;
+	padding: var(--defaultSpace);
+	position: fixed;
+	cursor: pointer;
+	opacity: 0;
+	right: 80px;
+	bottom: 40px;
+	z-index: 99;
+	transition: .5s;
+}
+.toTop:hover{
+	background-color: var(--colorDark);
+}
+.toTop a{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.toTop i{
+	margin: 0;
+}
+.small{
+	margin-top: var(--bigSpace);
+	margin-bottom: var(--bigSpace);
+}
+.small a{
+	padding: var(--minusSpace);
+	padding-left: var(--defaultSpace);
+	padding-right: var(--defaultSpace);
+}
+.button a:hover{
+	background-color: var(--colorDark);
+}
+/*-------------------------------------------------------------------*/
+/*Navbar*/
+.navbar{
+    width:100%;
+    background-color: var(--mainTheme);
+}
+.navbar .midColumn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding: 10px;
+	color: white;
+}
+.closebtn, .bars{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.overlay-content, .bars{
+    padding: var(--defaultSpace);
+}
+.overlay-content a, .bars, .port a{
+    color: white;
+    padding: var(--minusSpace);
+    margin: var(--minusSpace);
+	margin-right: 0;
+    transition: 0.2s;
+}
+.port a:hover{
+	color: var(--color)
+}
+.overlay-content a:hover{
+    border-bottom: solid var(--color) 5px;
+}
+/*-------------------------------------------------------------------*/
+/*1st Section*/
+.banner{
+	height: 800px;
+	background-image: url("src/banner.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	opacity: 0;
+	transition: .5s;
+}
+.bannerText{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.bannerText h2{
+	font-size: 100px;
+}
+.bannerText h1, .bannerText h3{
+	font-size: 30px;
+}
+.bannerText .button{
+	margin-top: var(--bigSpace);
+}
+/*-------------------------------------------------------------------*/
+/*2nd Section*/
+.secondSec{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--mainTheme);
+}
+.secondSec .midColumn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.secondSec .midColumn div{
+	width: 50%;
+}
+.imgAbout img{
+	width: 100%;
+}
+.textAbout p{
+	margin-top: var(--defaultSpace);
+	margin-bottom: var(--defaultSpace);
+}
+/*-------------------------------------------------------------------*/
+/*3rd Section*/
+.thirdSec, .forthSec{
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 100px;
+}
+.thirdSec h3, .forthSec h3{
+	margin-bottom: var(--minusSpace);
+}
+.galleryPjt{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.resource{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.thirdSec h2, .forthSec h2{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.galleryPjtElement{
+	margin: var(--minusSpace);
+	width: 400px;
+	background-color: var(--mainTheme);
+	border-radius: var(--border);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: solid var(--darkerTheme) 5px;
+	transition: .2s;
+}
+.galleryPjtElement:hover{
+	border: solid var(--color) 5px;
+}
+.galleryPjtElement img{
+	border-top-left-radius: var(--border);
+	border-top-right-radius: var(--border);
+	width: 100%;
+}
+.resource div{
+	background-color: var(--darkerTheme);
+	padding: var(--minusSpace);
+	border-radius: var(--border);
+	font-size: 15px;
+	margin-bottom: var(--minusSpace);
+	color:white
+}
+.galleryContent{
+	padding: var(--defaultSpace)
+}
+.galleryContent p{
+	height: 60px;
+}
+
+/*-------------------------------------------------------------------*/
+/*4th Section*/
+.forthSec{
+	background-color: var(--mainTheme);
+	text-align: center;
+}
+.forthSec h3{
+	font-size: 20px;
+	margin-bottom: var(--defaultSpace);
+	margin-top: var(--defaultSpace);
+}
+.forthSec i{
+	margin-top: var(--defaultSpace);
+	font-size: 50px;
+	color: var(--color)
+}
+.forthSec .galleryPjtElement{
+	background-color: var(--darkerTheme);
+	border: solid var(--mainTheme) 5px;
+}
+.forthSec .galleryPjtElement:hover{
+	border: solid var(--color) 5px;
+}
+
+/*-------------------------------------------------------------------*/
+/*5th Section*/
+.fifthSec{
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 100px;
+}
+.fifthSec .midColumn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fifthSec .textAbout{
+	width: 35%;
+}
+.fifthSec .textAbout i{
+	color: var(--color)
+}
+.fifthSec .galleryPjt{
+	justify-content: flex-end;
+	width: 60%
+}
+.fifthSec .galleryPjtElement{
+	background-color: var(--darkerTheme);
+	border: solid var(--mainTheme) 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	width: 22%;
+}
+.fifthSec .galleryPjtElement:hover{
+	border: solid var(--color) 5px;
+}
+.fifthSec .galleryPjtElement i{
+	color: var(--color);
+	font-size: 80px;
+}
+/*-------------------------------------------------------------------*/
+/*Footer*/
+.footer{
+	color: white;
+	font-family: 'New Tegomin' , serif;
+	font-weight: bold;
+	text-align: center;
+	padding: 40px 0px 45px 0px;
+	clear:both;
+	background-image: linear-gradient(to right, var(--color), var(--colorDark));
+	width: 100%;
+}
+.footer i{
+	color: white;
+	margin: 20px 30px 0px 30px;
+	font-size: 35px;
+	transition: 0.2s;
+}
+.footer i:hover{
+	color: var(--mainTheme);
+}
+@media screen and (max-width: 1000px){
+	.midColumn{
+        width:100%;
+    }
+	.overlay-content a:hover, .overlay a:focus, .closebtn{
+		border-bottom: solid var(--color) 0px;
+		color: var(--color)
+	}
+    .bars{
+        display: block;
+    }
+    .overlay{
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        z-index: 99;
+        left: 0;
+        top: 0;
+        background-color: black;
+        background-color: rgba(0, 0, 0, .9);
+        overflow-x: hidden;
+        transition: .5s;
+    }
+    .overlay-content{
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: var(--defaultSpace);
+    }
+    .overlay a{
+        padding: 8px;
+        font-size: 36px;
+        color: white;
+        display: block;
+        transition: .3s;
+    }
+    .overlay .closebtn{
+        position:absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+	.secondSec .midColumn, .fifthSec .midColumn{
+		flex-direction: column;
+		padding-bottom: 50px;
+	}
+	.secondSec .midColumn div, .fifthSec .midColumn div{
+		width: 90%;
+	}
+	.toTop{
+		right: 20px;
+	}
+}

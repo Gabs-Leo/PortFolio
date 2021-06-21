@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+		<script src="index.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="styleSheet.css">
+		<link rel="stylesheet" href="styleMainPage.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet"> 	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Gabs</title>
+	</head>
+	<body>
+		<div class="toTop" onclick="topFunction()" id="topB">
+			<i class="fas fa-arrow-up"></i>
+		</div>
+		<!--Navbar-->
+        <nav class="navbar" id="navnav">
+            <div class="midColumn">
+                <div class="port">
+                    <a href="#firstSec">Portfolio</a>
+                </div>
+                <div id="navBar" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#aboutMe" onclick="closeNav()">Sobre Mim</a>
+                        <a href="#projects" onclick="closeNav()">Projetos</a>
+                        <a href="#services" onclick="closeNav()">Serviços</a>
+                        <a href="#knowledge" onclick="closeNav()">Conhecimentos</a>
+                    </div>
+                </div>
+                <a href="#" onclick="openNav()" class="bars"><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+
+		<!--1st Section-->
+		<div class="banner" id="firstSec" data-aos="fade-in" data-aos-duration="2000" data-aos-mirror="true">
+			<div class="bannerText">
+				<h3>Oi, eu sou o</h3>
+				<h2>Gabs</h2>
+				<h1>Desenvolvedor de Sistemas e Jogos</h1>
+				<div class="button">
+					<a target="_blank" href="https://api.whatsapp.com/send?phone=16994132334&text=Oi,%20tudo%20bem?"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+				</div>
+			</div>
+		</div>
+
+		<!--2nd Section-->
+		<div class="secondSec" id="aboutMe">
+			<div class="midColumn">
+				<div class="imgAbout" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
+					<img src="src/myself.png">
+				</div>
+				<div class="textAbout" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
+					<h2>
+						Sobre Mim
+					</h2>
+					<p>Meu nome é Gabriel, tenho 18 anos, moro em Franca-Sp (Brasil). Atualmente estou fazendo o curso de desenvolvimento de Games da Danki code para melhorar meus conhecimentos em jogos.</p>
+					<p>Comecei aos 16 anos com desenvolvimento web, criando sites para empresas e dando aulas em escolas de cursos. Desde então, estudo por volta de 4 horas todos os dias. Pretendo desenvolver jogos em breve.</p>
+					<div class="button">
+						<a target="_blank" href="src/CurriculoGabriel.pdf"><i class="fas fa-file-contract"></i>Currículo</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--3rd Section-->
+		<div class="thirdSec" id="projects">
+			<div class="" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
+				<h2>Projetos</h2>
+				<div class="galleryPjt" >
+					<div class="galleryPjtElement">
+						<div>
+							<img src="src/project1.jpg">
+						</div>
+						<div class="galleryContent">
+							<h3>Bachur Cursos</h3>
+							<p>Site desenvolvido para a "Bachur Cursos", responsivo e com integrações na RD Station.</p>
+							<div class="button small">
+								<a href="https://www.bachurcursos.com.br/" target="_blank"><i class="fas fa-globe"></i>Website</a>
+							</div>
+							<div class="resource">
+								<div>HTML</div>
+								<div>CSS</div>
+								<div>JS</div>
+								<div>RD Station</div>
+							</div>
+						</div>
+					</div>
+					<div class="galleryPjtElement">
+						<img src="src/comingSoon.jpg">
+						<div class="galleryContent">
+							<h3>Em Breve</h3>
+							<p>Em breve.</p>
+							<div class="button small">
+								<a href="#"><i class="fas fa-globe"></i>???</a>
+							</div>
+							<div class="resource">
+								<div>???</div>
+								<div>???</div>
+								<div>???</div>
+							</div>
+						</div>
+					</div>
+					<div class="galleryPjtElement">
+						<img src="src/comingSoon.jpg">
+						<div class="galleryContent">
+							<h3>Em Breve</h3>
+							<p>Em breve.</p>
+							<div class="button small">
+								<a href="#"><i class="fas fa-globe"></i>???</a>
+							</div>
+							<div class="resource">
+								<div>???</div>
+								<div>???</div>
+								<div>???</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--4th Section-->
+		<div class="forthSec" id="services">
+			<div class="" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
+				<h2>Serviços</h2>
+				<div class="galleryPjt">
+					<div class="galleryPjtElement">
+						<div class="galleryContent">
+							<i class="fas fa-desktop"></i>
+							<h3>Criação de Sites</h3>
+							<p>Desenvolvimento de sites profissionais e responsivos.</p>
+						</div>
+					</div>
+					<div class="galleryPjtElement">
+						<div class="galleryContent">
+							<i class="fas fa-code"></i>
+							<h3>Programação</h3>
+							<p>Desenvolvimento de softwares e aplicativos com Java, C++ e Python.</p>
+						</div>
+					</div>
+					<div class="galleryPjtElement">
+						<div class="galleryContent">
+							<i class="fas fa-gamepad"></i>
+							<h3>Design de Jogos</h3>
+							<p>Desenvolvimento de jogos 3D e 2D nas mais diversas linguagens e engines.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--5th Section-->
+		<div class="fifthSec" id="knowledge">
+			<div class="midColumn" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
+				<div class="textAbout" >
+					<h2>
+						Conhecimentos
+					</h2>
+					<p id="text1">Agradeço sua atenção 💜 juntos podemos criar qualquer coisa!</p>
+					<p id="text2">*Passe o mouse nos cards para ler sobre*</p>
+				</div>
+				<div class="galleryPjt">
+					<div class="galleryPjtElement" id="html" onmouseover="changeText('html')" onmouseout="backText()">
+						<i class="fab fa-html5"></i>
+					</div>
+					<div class="galleryPjtElement" id="css" onmouseover="changeText('css')" onmouseout="backText()">
+						<i class="fab fa-css3-alt"></i>
+					</div>
+					<div class="galleryPjtElement" id="js" onmouseover="changeText('js')" onmouseout="backText()">
+						<i class="fab fa-js-square"></i>
+					</div>
+					<div class="galleryPjtElement" id="java" onmouseover="changeText('java')" onmouseout="backText()">
+						<i class="fab fa-java"></i>
+					</div>
+					<div class="galleryPjtElement" id="python" onmouseover="changeText('python')" onmouseout="backText()">
+						<i class="fab fa-python"></i>
+					</div>
+					<div class="galleryPjtElement" id="c++" onmouseover="changeText('c++')" onmouseout="backText()">
+						<i style="font-size: 4vw;">C++</i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Footer-->
+		<footer class="footer">
+			Feito por Gabs<br>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=16994132334&text=Oi,%20tudo%20bem?"><i class="fab fa-whatsapp"></i></a>
+			<a href="https://www.instagram.com/gabsinthebox/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://github.com/Gabs-Leo" target="_blank"><i class="fab fa-github"></i></a>
+		</footer>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

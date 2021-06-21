@@ -373,7 +373,7 @@ nav{
         position: relative;
         top: 25%;
         width: 100%;
-        text-align: center;
+        text-align: left;
         margin-top: var(--defaultSpace);
     }
     .overlay a{
@@ -401,5 +401,8 @@ nav{
 	}
 	#cplusplus i{
 		font-size: 100px;
+	}
+	.toTop{
+		right: 40px;
 	}
 }

@@ -47,14 +47,10 @@ h1, h2, h3, h4{
 h2{
 	font-size: 40px;
 }
-strong{
-    color: var(--color)
-}
 .button{
 	margin-top: var(--bigSpace);
 	margin-bottom: var(--bigSpace);
 }
-
 .button a{
 	padding: var(--defaultSpace);
 	padding-left: var(--bigSpace);
@@ -91,9 +87,6 @@ strong{
 .toTop a{
 	padding-left: 25px;
 	padding-right: 25px;
-}
-.toTop i{
-	margin: 0;
 }
 .small{
 	margin-top: var(--bigSpace);
@@ -275,6 +268,7 @@ nav{
 .forthSec .galleryPjtElement{
 	background-color: var(--darkerTheme);
 	border: solid var(--mainTheme) 5px;
+	width: 21%;
 }
 .forthSec .galleryPjtElement:hover{
 	border: solid var(--color) 5px;
@@ -320,6 +314,9 @@ nav{
 .fifthSec .galleryPjtElement i{
 	color: var(--color);
 	font-size: 80px;
+}
+#cplusplus i{
+	font-size: 4vw;
 }
 /*-------------------------------------------------------------------*/
 /*Footer*/
@@ -369,7 +366,7 @@ nav{
         position: relative;
         top: 25%;
         width: 100%;
-        text-align: center;
+        text-align: left;
         margin-top: var(--defaultSpace);
     }
     .overlay a{
@@ -389,10 +386,18 @@ nav{
 		flex-direction: column;
 		padding-bottom: 50px;
 	}
-	.secondSec .midColumn div, .fifthSec .midColumn div{
+	.secondSec .midColumn div, .fifthSec .midColumn div, .forthSec .galleryPjtElement, .thirdSec .galleryPjtElement{
 		width: 90%;
 	}
+	.small{
+		margin-top: 50px;
+	}
+	#cplusplus i{
+		font-size: 100px;
+	}
 	.toTop{
-		right: 20px;
+		right: 40px;
+		bottom: 40px;
+		display: none;
 	}
 }

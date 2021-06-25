@@ -24,7 +24,7 @@ function changeText(x){
             document.getElementById("text1").innerHTML = 'Java é uma linguagem de programação de alto nível, baseada em classes, orientada a objetos e muito conhecida por sua portabilidade e segurança.'
             document.getElementById("text2").innerHTML = "6 meses de experiência."
         },
-        pyton: () => {
+        python: () => {
             document.getElementById("text1").innerHTML = 'Python é uma linguagem de programação de alto nível muito conhecida por possuir um código de fácil leitura e por poder ser utilizada em várias áreas de desenvolvimento.'
             document.getElementById("text2").innerHTML = "3 meses de experiência."
         },

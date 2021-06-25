@@ -386,14 +386,17 @@ nav{
 		flex-direction: column;
 		padding-bottom: 50px;
 	}
-	.secondSec .midColumn div, .fifthSec .midColumn div, .forthSec .galleryPjtElement, .thirdSec .galleryPjtElement{
+	.secondSec .midColumn div, .forthSec .galleryPjtElement, .thirdSec .galleryPjtElement, .fifthSec .galleryPjt, .fifthSec .textAbout{
 		width: 90%;
+	}
+	.fifthSec .galleryPjt{
+		justify-content: center;
 	}
 	.small{
 		margin-top: 50px;
 	}
 	#cplusplus i{
-		font-size: 100px;
+		font-size: 7vw;
 	}
 	.toTop{
 		right: 40px;

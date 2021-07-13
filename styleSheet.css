@@ -137,7 +137,7 @@ nav{
     border-bottom: solid var(--color) 5px;
 }
 /*-------------------------------------------------------------------*/
-/*1st Section*/
+/*<!--Presentation-->*/
 .banner{
 	height: 800px;
 	background-image: url("src/banner.png");
@@ -165,7 +165,7 @@ nav{
 	margin-top: var(--bigSpace);
 }
 /*-------------------------------------------------------------------*/
-/*2nd Section*/
+/*<!--AboutMe-->*/
 .secondSec{
 	display: flex;
 	justify-content: center;
@@ -191,7 +191,8 @@ nav{
 	margin-bottom: var(--defaultSpace);
 }
 /*-------------------------------------------------------------------*/
-/*3rd Section*/
+/*<!--Projects-->
+*/
 .thirdSec, .forthSec{
 	padding-top: 100px;
 	display: flex;
@@ -245,9 +246,7 @@ nav{
 .galleryContent{
 	padding: var(--defaultSpace)
 }
-.galleryContent p{
-	height: 60px;
-}
+
 
 /*-------------------------------------------------------------------*/
 /*4th Section*/

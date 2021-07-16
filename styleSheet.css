@@ -219,7 +219,7 @@ nav{
 }
 .galleryPjtElement{
 	margin: var(--minusSpace);
-	width: 400px;
+	width: 450px;
 	background-color: var(--mainTheme);
 	border-radius: var(--border);
 	border-top-left-radius: 15px;
@@ -245,6 +245,9 @@ nav{
 }
 .galleryContent{
 	padding: var(--defaultSpace)
+}
+.thirdSec .galleryContent p{
+	height: 70px;
 }
 .pyth{
 	justify-content: center;

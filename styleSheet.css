@@ -322,9 +322,6 @@ nav{
 	color: var(--color);
 	font-size: 80px;
 }
-#cplusplus i{
-	font-size: 4vw;
-}
 /*-------------------------------------------------------------------*/
 /*Footer*/
 .footer{
@@ -401,9 +398,6 @@ nav{
 	}
 	.small{
 		margin-top: 50px;
-	}
-	#cplusplus i{
-		font-size: 7vw;
 	}
 	.toTop{
 		right: 40px;

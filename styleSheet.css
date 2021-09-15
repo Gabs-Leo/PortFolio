@@ -8,6 +8,7 @@
     font-size: 20px;
     color: var(--colorText);
 	font-family: "Montserrat", serif;
+	box-sizing: border-box;
 }
 html{
 	scroll-behavior: smooth;
@@ -166,7 +167,7 @@ nav{
 }
 /*-------------------------------------------------------------------*/
 /*<!--AboutMe-->*/
-.secondSec{
+.aboutMe{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -175,12 +176,12 @@ nav{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-.secondSec .midColumn{
+.aboutMe .midColumn{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.secondSec .midColumn div{
+.aboutMe .midColumn div{
 	width: 50%;
 }
 .imgAbout img{
@@ -193,16 +194,6 @@ nav{
 /*-------------------------------------------------------------------*/
 /*<!--Projects-->
 */
-.thirdSec, .forthSec{
-	padding-top: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 100px;
-}
-.thirdSec h3, .forthSec h3{
-	margin-bottom: var(--minusSpace);
-}
 .galleryPjt{
 	display: flex;
 	justify-content: center;
@@ -213,19 +204,18 @@ nav{
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.thirdSec h2, .forthSec h2{
-	text-align: center;
-	margin-bottom: 50px;
-}
 .galleryPjtElement{
 	margin: var(--minusSpace);
-	width: 450px;
+	width: 100%;
 	background-color: var(--mainTheme);
 	border-radius: var(--border);
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	border: solid var(--darkerTheme) 5px;
 	transition: .2s;
+}
+.swiper .galleryPjtElement{
+	margin: 0;
 }
 .galleryPjtElement:hover{
 	border: solid var(--color) 5px;
@@ -246,9 +236,6 @@ nav{
 .galleryContent{
 	padding: var(--defaultSpace)
 }
-.thirdSec .galleryContent p{
-	height: 70px;
-}
 .pyth{
 	justify-content: center;
 }
@@ -258,32 +245,41 @@ nav{
 }
 /*-------------------------------------------------------------------*/
 /*4th Section*/
-.forthSec{
+.services{
 	background-color: var(--mainTheme);
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 100px;
 	text-align: center;
 }
-.forthSec h3{
+.services h3{
 	font-size: 20px;
-	margin-bottom: var(--defaultSpace);
+	margin-bottom: var(--minusSpace);
 	margin-top: var(--defaultSpace);
 }
-.forthSec i{
+.services h2{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.services i{
 	margin-top: var(--defaultSpace);
 	font-size: 50px;
 	color: var(--color)
 }
-.forthSec .galleryPjtElement{
+.services .galleryPjtElement{
 	background-color: var(--darkerTheme);
 	border: solid var(--mainTheme) 5px;
 	width: 21%;
 }
-.forthSec .galleryPjtElement:hover{
+.services .galleryPjtElement:hover{
 	border: solid var(--color) 5px;
 }
 
 /*-------------------------------------------------------------------*/
-/*5th Section*/
-.fifthSec{
+/*Knowledge*/
+.knowledge{
 	padding-top: 100px;
 	display: flex;
 	justify-content: center;
@@ -291,34 +287,34 @@ nav{
 	flex-direction: column;
 	padding-bottom: 100px;
 }
-.fifthSec .midColumn{
+.knowledge .midColumn{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.fifthSec .textAbout{
+.knowledge .textAbout{
 	width: 35%;
 }
-.fifthSec .textAbout i{
+.knowledge .textAbout i{
 	color: var(--color)
 }
-.fifthSec .galleryPjt{
+.knowledge .galleryPjt{
 	justify-content: flex-end;
-	width: 60%
+	width: 600px;
 }
-.fifthSec .galleryPjtElement{
+.knowledge .galleryPjtElement{
 	background-color: var(--darkerTheme);
 	border: solid var(--mainTheme) 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 150px;
-	width: 22%;
+	width: 30%;
 }
-.fifthSec .galleryPjtElement:hover{
+.knowledge .galleryPjtElement:hover{
 	border: solid var(--color) 5px;
 }
-.fifthSec .galleryPjtElement i{
+.knowledge .galleryPjtElement i{
 	color: var(--color);
 	font-size: 80px;
 }
@@ -342,6 +338,27 @@ nav{
 }
 .footer i:hover{
 	color: var(--mainTheme);
+}
+
+/*Swipe*/
+.swiper {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.swiper h2{
+	text-align: center;
+	margin-bottom: var(--bigSpace);
+}
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 100px;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
 }
 @media screen and (max-width: 1000px){
 	.midColumn{
@@ -386,14 +403,14 @@ nav{
         right: 45px;
         font-size: 60px;
     }
-	.secondSec .midColumn, .fifthSec .midColumn{
+	.aboutMe .midColumn, .knowledge .midColumn{
 		flex-direction: column;
 		padding-bottom: 50px;
 	}
-	.secondSec .midColumn div, .forthSec .galleryPjtElement, .thirdSec .galleryPjtElement, .fifthSec .galleryPjt, .fifthSec .textAbout{
+	.aboutMe .midColumn div, .services .galleryPjtElement, .knowledge .galleryPjt, .knowledge .textAbout{
 		width: 90%;
 	}
-	.fifthSec .galleryPjt{
+	.knowledge .galleryPjt{
 		justify-content: center;
 	}
 	.small{

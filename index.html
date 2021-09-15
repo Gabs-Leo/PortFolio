@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Font Awesome -->
 		<link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+
+		<!-- Favicon -->
 		<link rel="icon" href="src/favv.ico" type="image/gif" sizes="16x16">
+
+		<!-- JavaScript -->
 		<script src="index.js"></script>
+
+		<!-- CSS -->
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="styleSheet.css">
-		<link rel="stylesheet" href="styleMainPage.css">
+
+		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet"> 	
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+		
+		<!-- Base Properties -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>Portfólio | Gabs</title>
 	</head>
 	<body>
+		<!-- To Top Button-->
 		<div class="toTop" onclick="topFunction()" id="topB">
 			<i class="fas fa-arrow-up"></i>
 		</div>
+
 		<!--Navbar-->
         <nav class="navbar" id="navnav">
             <div class="midColumn">
@@ -51,48 +62,10 @@
 		</div>
 
 		<!--Projects-->
-		<div class="thirdSec" id="projects">
-			<div class="" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
-				<h2>Projetos</h2>
-				<div class="galleryPjt">
-					<!--ReplyCat-->
-					<div class="galleryPjtElement">
-						<img src="src/replyCat.jpg">
-						<div class="galleryContent">
-							<h3>ReplyCat [🔧Alpha]</h3>
-							<p>Um bot que responde automaticamente mensagens do Whatsapp e Telegram simultaneamente.</p>
-							<div class="buttons">
-								<div class="button small">
-									<a href="https://github.com/Gabs-Leo/ReplyCat" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
-									<!--<div class="button small">
-									<a href="kay-o/kay-o.html" target="_blank"><i class="fas fa-info-circle"></i>Saiba Mais</a>
-								</div>-->
-								</div>
-							</div>
-							<div class="resource">
-								<div>Python</div>
-							</div>
-						</div>
-					</div>
-					<!--Kay-O-->
-					<div class="galleryPjtElement">
-						<img src="src/kayO.jpg">
-						<div class="galleryContent">
-							<h3>Kay-O</h3>
-							<p>Um programa simples que desliga o computador em um horário determinado.</p>
-							<div class="buttons">
-								<div class="button small">
-									<a href="https://github.com/Gabs-Leo/Kay-O.Time.Limiter" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
-								</div>
-							</div>
-							<div class="resource">
-								<div>Python</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="galleryPjt">
-					<!--Bachur Cursos-->
+		<div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true" id="projects">
+			<h2>Projetos</h2>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
 					<div class="galleryPjtElement">
 						<div>
 							<img src="src/project1.jpg">
@@ -111,8 +84,8 @@
 							</div>
 						</div>
 					</div>
-
-					<!--Centro CATA-->
+				</div>
+				<div class="swiper-slide">
 					<div class="galleryPjtElement">
 						<img src="src/project2.jpg">
 						<div class="galleryContent">
@@ -129,46 +102,51 @@
 							</div>
 						</div>
 					</div>
-
-					<!--Coming Soon
+				</div>
+				<div class="swiper-slide">
 					<div class="galleryPjtElement">
-						<img src="src/comingSoon.jpg">
+						<img src="src/kayO.jpg">
 						<div class="galleryContent">
-							<h3>Em Breve.</h3>
-							<p>Em breve.</p>
+							<h3>Kay-O</h3>
+							<p>Um programa simples que desliga o computador em um horário determinado.</p>
 							<div class="buttons">
 								<div class="button small">
-									<a href="#" target="_blank"><i class="fas fa-globe"></i>???</a>
+									<a href="https://github.com/Gabs-Leo/Kay-O.Time.Limiter" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
 								</div>
 							</div>
-							<div class="resource pyth">
-								<div>???</div>
+							<div class="resource">
+								<div>Python</div>
 							</div>
 						</div>
 					</div>
-
+				</div>
+				<div class="swiper-slide">
 					<div class="galleryPjtElement">
-						<img src="src/comingSoon.jpg">
+						<img src="src/replyCat.jpg">
 						<div class="galleryContent">
-							<h3>Em Breve.</h3>
-							<p>Em breve.</p>
+							<h3>ReplyCat [🔧Alpha]</h3>
+							<p>Um bot que responde automaticamente mensagens do Whatsapp e Telegram simultaneamente.</p>
 							<div class="buttons">
 								<div class="button small">
-									<a href="#" target="_blank"><i class="fas fa-globe"></i>???</a>
+									<a href="https://github.com/Gabs-Leo/ReplyCat" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
+									<!--<div class="button small">
+									<a href="kay-o/kay-o.html" target="_blank"><i class="fas fa-info-circle"></i>Saiba Mais</a>
+								</div>-->
 								</div>
 							</div>
-							<div class="resource pyth">
-								<div>???</div>
+							<div class="resource">
+								<div>Python</div>
 							</div>
 						</div>
-					</div>-->
+					</div>
 				</div>
 			</div>
+			<div class="swiper-pagination"></div>
 		</div>
 
-		<!--4th Section-->
-		<div class="forthSec" id="services">
-			<div class="" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
+		<!--Services-->
+		<div class="services" id="services">
+			<div data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
 				<h2>Serviços</h2>
 				<div class="galleryPjt">
 					<div class="galleryPjtElement">
@@ -196,8 +174,8 @@
 			</div>
 		</div>
 
-		<!--5th Section-->
-		<div class="fifthSec" id="knowledge">
+		<!--Knowledge-->
+		<div class="knowledge" id="knowledge">
 			<div class="midColumn" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
 				<div class="textAbout" >
 					<h2>
@@ -219,18 +197,18 @@
 					<div class="galleryPjtElement" id="java" onmouseover="changeText('java')" onmouseout="backText()">
 						<i class="fab fa-java"></i>
 					</div>
-					<div class="galleryPjtElement" id="python" onmouseover="changeText('python')" onmouseout="backText()">
-						<i class="fab fa-python"></i>
+					<div class="galleryPjtElement" id="springboot" onmouseover="changeText('springboot')" onmouseout="backText()">
+						<i class="fas fa-leaf"></i>
 					</div>
 					<div class="galleryPjtElement" id="cplusplus" onmouseover="changeText('c++')" onmouseout="backText()">
-						<i class="fab fa-node"></i>
+						<i class="fas fa-feather-alt"></i>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!--AboutMe-->
-		<div class="secondSec" id="aboutMe">
+		<div class="aboutMe" id="aboutMe">
 			<div class="midColumn">
 				<div class="imgAbout" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
 					<img src="src/myself.png">
@@ -247,6 +225,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!--Footer-->
 		<footer class="footer">
 			Feito por Gabs<br>
@@ -255,7 +234,38 @@
 			<a href="https://github.com/Gabs-Leo" target="_blank"><i class="fab fa-github"></i></a>
 		</footer>
 
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<!-- JavaScript -->
+		<script src="db.js"></script>
+		<script src="projects.js"></script>
+
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+			effect: "coverflow",
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: "4",
+			spaceBetween: 50,
+			loop: true,
+			coverflowEffect: {
+				rotate: 20,
+				stretch: 0,
+				depth: 200,
+				modifier: 1,
+				slideShadows: true,
+
+			},
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			});
+		</script>
+
+		<!-- Data AOS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init();
 		</script>

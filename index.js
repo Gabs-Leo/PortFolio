@@ -8,6 +8,11 @@ function closeNav(){
     }
 }
 
+let samt = 0;
+window.addEventListener('scroll', function() {
+samt <= 10 ? samt++ : AOS.refresh();
+});
+
 //Calculating Experience Time
 today = new Date();
 anoAtual = today.getFullYear();
@@ -60,9 +65,9 @@ jsMonth = 2;
 jsYear = 2021;
 javaMonth = 1;
 javaYear = 2021;
-pythonMonth = 1;
+pythonMonth = 8;
 pythonYear = 2021;
-nodeMonth = 6;
+nodeMonth = 8;
 nodeYear = 2021;
 function changeText(x){
     const languages = {
@@ -82,12 +87,12 @@ function changeText(x){
             document.getElementById("text1").innerHTML = '☕Java é uma linguagem de programação de alto nível, baseada em classes, orientada a objetos e muito conhecida por sua portabilidade e segurança.'
             document.getElementById("text2").innerHTML = `${checkTime(javaYear, javaMonth)} de experiência.`
         },
-        python: () => {
-            document.getElementById("text1").innerHTML = '🐍Python é uma linguagem de programação de alto nível muito conhecida por possuir um código de fácil leitura e por poder ser utilizada em várias áreas de desenvolvimento.'
+        springboot: () => {
+            document.getElementById("text1").innerHTML = '🍃 O Spring Boot é um framework Java que tem como objetivo facilitar o processo em aplicações Java. Ele traz mais agilidade para o processo de desenvolvimento e configuração de aplicativos e APIs.'
             document.getElementById("text2").innerHTML = `${checkTime(pythonYear, pythonMonth)} de experiência.`
         },
         "c++": () => {
-            document.getElementById("text1").innerHTML = '🎲 Node é um interpretador que permite a criação de um banco de dados e também execução de códigos JavaScript fora do navegador web.'
+            document.getElementById("text1").innerHTML = '🌐 O Spring MVC é um framework Java que ajuda no desenvolvimento de aplicações web baseada em servlets ou pequenos servidores.'
             document.getElementById("text2").innerHTML = `${checkTime(nodeYear, nodeMonth)} de experiência.`
         }
     }

@@ -345,11 +345,22 @@ nav{
 	width: 100%;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	margin-bottom: var(--bigSpace);
 }
 .swiper h2{
 	text-align: center;
-	margin-top: 100px;
 	margin-bottom: var(--bigSpace);
+}
+.swiper h3{
+	margin-bottom: var(--minusSpace);
+}
+.swiper p{
+	margin-bottom: 0;
+}
+.swiper .small{
+	margin: 0;
+	margin-top: var(--defaultSpace);
+	margin-bottom: var(--minusSpace);
 }
 .swiper-slide {
 	background-position: center;

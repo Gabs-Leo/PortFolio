@@ -76,12 +76,12 @@
 							<div class="button small">
 								<a href="https://www.bachurcursos.com.br/" target="_blank"><i class="fas fa-globe"></i>Website</a>
 							</div>
-							<div class="resource">
+							<!--<div class="resource">
 								<div>HTML</div>
 								<div>CSS</div>
 								<div>JS</div>
 								<div>RD Station</div>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -94,12 +94,12 @@
 							<div class="button small">
 								<a href="https://centrocata.com.br/" target="_blank"><i class="fas fa-globe"></i>Website</a>
 							</div>
-							<div class="resource">
+							<!--<div class="resource">
 								<div>HTML</div>
 								<div>CSS</div>
 								<div>JS</div>
 								<div>Bootstrap</div>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -114,9 +114,9 @@
 									<a href="https://github.com/Gabs-Leo/Kay-O.Time.Limiter" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
 								</div>
 							</div>
-							<div class="resource">
+							<!--<div class="resource">
 								<div>Python</div>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -134,9 +134,9 @@
 								</div>-->
 								</div>
 							</div>
-							<div class="resource">
+							<!--<div class="resource">
 								<div>Python</div>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -247,7 +247,7 @@
 			effect: "coverflow",
 			grabCursor: true,
 			centeredSlides: true,
-			slidesPerView: "4",
+			
 			spaceBetween: 50,
 			loop: true,
 			coverflowEffect: {
@@ -256,7 +256,26 @@
 				depth: 200,
 				modifier: 1,
 				slideShadows: true,
-
+				slidesPerView: 2,
+			},
+			breakpoints: {
+				// when window width is >=
+				100: {
+					slidesPerView: 1.2,
+					spaceBetween: 20,
+				},
+				800: {
+				slidesPerView: 2,
+				spaceBetween: 30
+				},
+				1200: {
+				slidesPerView: 3,
+				spaceBetween: 30
+				},
+				1400: {
+					slidesPerView: 4,
+					spaceBetween: 40
+				},
 			},
 			pagination: {
 				el: ".swiper-pagination",

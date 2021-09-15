@@ -348,12 +348,13 @@ nav{
 }
 .swiper h2{
 	text-align: center;
+	margin-top: 100px;
 	margin-bottom: var(--bigSpace);
 }
 .swiper-slide {
 	background-position: center;
 	background-size: cover;
-	width: 100px;
+	width: 300px;
 }
 
 .swiper-slide img {
@@ -421,4 +422,5 @@ nav{
 		bottom: 40px;
 		display: none;
 	}
+	
 }
